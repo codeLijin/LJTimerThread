@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage     = 'https://github.com/codeLijin/LJTimerThread'
   s.author       = { 'author' => 'lijin19920905@foxmail.com' }
   s.social_media_url   = "https://github.com/codeLijin/LJTimerThread"
-  s.source       = { :git => 'https://github.com/codeLijin/LJTimerThread', :tag => s.version }
+  s.source       = { :git => 'https://github.com/codeLijin/LJTimerThread.git', :tag => s.version }
   s.requires_arc = true
   s.source_files = 'LJTimerThread'
   s.license      = "MIT"
