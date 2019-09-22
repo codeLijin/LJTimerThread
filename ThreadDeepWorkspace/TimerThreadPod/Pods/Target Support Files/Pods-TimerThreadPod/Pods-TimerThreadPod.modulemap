@@ -1,0 +1,6 @@
+framework module Pods_TimerThreadPod {
+  umbrella header "Pods-TimerThreadPod-umbrella.h"
+
+  export *
+  module * { export * }
+}

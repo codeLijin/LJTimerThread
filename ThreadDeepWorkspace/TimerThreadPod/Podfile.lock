@@ -1,0 +1,16 @@
+PODS:
+  - LJTimerThread (1.0.2)
+
+DEPENDENCIES:
+  - LJTimerThread (~> 1.0.2)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - LJTimerThread
+
+SPEC CHECKSUMS:
+  LJTimerThread: 5b1fa6f5b56b987d39e604715265521140701eb4
+
+PODFILE CHECKSUM: 5eaeb610d4ed877f5840e69e10280561feca7b51
+
+COCOAPODS: 1.7.5

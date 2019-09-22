@@ -1,0 +1,6 @@
+framework module LJTimerThread {
+  umbrella header "LJTimerThread-umbrella.h"
+
+  export *
+  module * { export * }
+}

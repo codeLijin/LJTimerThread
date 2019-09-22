@@ -1,0 +1,989 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		043110EAC733D8E37EA5211E53B50F2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		18AB635ABBBC94CC3208E03ECBEE1500 /* Pods-TimerThreadPodTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D5D4601E999AF16630F43278DE0E410 /* Pods-TimerThreadPodTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DA1A4FC0234B87E2ECC52C099C9880C /* LJTimerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D453FD2654AA41063533347B1C3DCDD /* LJTimerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2289DB68F71B2ADC2154D724E12F4CF0 /* Pods-TimerThreadPod-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 40231669E53C3201CCDBE1A89E42E7B8 /* Pods-TimerThreadPod-dummy.m */; };
+		28799128580118B93561B5343BF79F4A /* LJTimerThread-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 418F78CE491B8B9D0687272C38C89599 /* LJTimerThread-dummy.m */; };
+		3037C0A83672A2DDB80F815D364F9CE9 /* LJTimerThread.h in Headers */ = {isa = PBXBuildFile; fileRef = 02793A149B31F134C5834EA2ECF08A64 /* LJTimerThread.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		375E32DA886B2D5C81232B4C0870BD89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		3DE3BF09ECB153D26E1A445495A0A23E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		4777E43E5855CA816287D31436EA57DB /* LJTimerThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 380B0678A30521162744C415CF1D0609 /* LJTimerThread.m */; };
+		65EA7980FABA1BC27F63959FEAF665C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		7AEBD2219CE9765B0ED67CD9880D4FE6 /* Pods-TimerThreadPodUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 93E75FD352DF7890B60310175899C490 /* Pods-TimerThreadPodUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94C96CEEC349E914A6067DE8F043E65B /* LJTimerEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = ADCD32C35DD6BCCA3B5AC7585B4EF2C8 /* LJTimerEnum.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97979F7B470D506602D040C5A8B1B278 /* LJTaskSourceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FAAA59FBC9E9ACD3B4347AF79481AD1 /* LJTaskSourceInfo.m */; };
+		A1BB0A571ED01573D39FE6ED4EA94B55 /* Pods-TimerThreadPodUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB7B7A5A10B2FA2DEB1F7607B307215 /* Pods-TimerThreadPodUITests-dummy.m */; };
+		AA0E7BBD8980283F76B03D265DAB7A64 /* Pods-TimerThreadPodTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3427FE1BF4E63DD77503D580055A5491 /* Pods-TimerThreadPodTests-dummy.m */; };
+		BF708C75797CC00159E55C013B873F77 /* LJTimerTaskSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DC20781ACABD9CAD177FC9BCB2E7E3 /* LJTimerTaskSource.m */; };
+		C5B48F28FAB287AC21141ABDDC3137E0 /* LJTimerTaskSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C3F582E2E467510A6422A1203B5CA55 /* LJTimerTaskSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C840216B467078E9FC337B59855E22CB /* LJTaskSourceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 125E9141D3A363F2105783CD092992BA /* LJTaskSourceInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEAC7FE72E7A5D3FCA05B722BDB6ECE0 /* Pods-TimerThreadPod-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A66C20BE968F6A59383254D536C10FF /* Pods-TimerThreadPod-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1BE036698CD7A5E9D834EDDFD58EF82 /* LJTimerThread-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E8331CF44136BC080D0D8FD4E595BD2 /* LJTimerThread-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3564DC7282FB045FEC6B9483CDB274F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC88D0DE8F8348038B603BC51B4B851D;
+			remoteInfo = "Pods-TimerThreadPod";
+		};
+		B4E935B0B82A6475A9A81CEBCB9461E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC88D0DE8F8348038B603BC51B4B851D;
+			remoteInfo = "Pods-TimerThreadPod";
+		};
+		EB5A6544C547CD757A3D55782F8B3936 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11E9E3B218CA17B7148EB79F058C61BA;
+			remoteInfo = LJTimerThread;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02793A149B31F134C5834EA2ECF08A64 /* LJTimerThread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LJTimerThread.h; path = LJTimerThread/LJTimerThread.h; sourceTree = "<group>"; };
+		0A66C20BE968F6A59383254D536C10FF /* Pods-TimerThreadPod-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TimerThreadPod-umbrella.h"; sourceTree = "<group>"; };
+		0BE5BB973F5E06F2BD1897DC747BB8A9 /* Pods_TimerThreadPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TimerThreadPod.framework; path = "Pods-TimerThreadPod.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		125E9141D3A363F2105783CD092992BA /* LJTaskSourceInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LJTaskSourceInfo.h; path = LJTimerThread/LJTaskSourceInfo.h; sourceTree = "<group>"; };
+		13D8F28EE5794427054AA43049E0CAE1 /* Pods-TimerThreadPodTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TimerThreadPodTests.debug.xcconfig"; sourceTree = "<group>"; };
+		17569AE44EE752603BB9D7557C95A6B1 /* Pods-TimerThreadPodTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TimerThreadPodTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1A22F3AE09691C13CEA190E7899B4BB7 /* LJTimerThread.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LJTimerThread.framework; path = LJTimerThread.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CBE5EB0232E23B605407DB03770E51B /* Pods-TimerThreadPodTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TimerThreadPodTests.release.xcconfig"; sourceTree = "<group>"; };
+		1D4F2FDDA2880F9E067064B676D7E181 /* Pods-TimerThreadPod-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TimerThreadPod-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1FAAA59FBC9E9ACD3B4347AF79481AD1 /* LJTaskSourceInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LJTaskSourceInfo.m; path = LJTimerThread/LJTaskSourceInfo.m; sourceTree = "<group>"; };
+		282646CFCDDC5783D372F85B43B69A5A /* Pods-TimerThreadPod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TimerThreadPod.debug.xcconfig"; sourceTree = "<group>"; };
+		2AE9B14086A3DFAC95C4E5D44E73448B /* Pods-TimerThreadPodUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TimerThreadPodUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3427FE1BF4E63DD77503D580055A5491 /* Pods-TimerThreadPodTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TimerThreadPodTests-dummy.m"; sourceTree = "<group>"; };
+		380B0678A30521162744C415CF1D0609 /* LJTimerThread.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LJTimerThread.m; path = LJTimerThread/LJTimerThread.m; sourceTree = "<group>"; };
+		40231669E53C3201CCDBE1A89E42E7B8 /* Pods-TimerThreadPod-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TimerThreadPod-dummy.m"; sourceTree = "<group>"; };
+		418F78CE491B8B9D0687272C38C89599 /* LJTimerThread-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LJTimerThread-dummy.m"; sourceTree = "<group>"; };
+		49FFC9DBE5E224F1756FC77660F96044 /* Pods-TimerThreadPodUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TimerThreadPodUITests-Info.plist"; sourceTree = "<group>"; };
+		4F0ACD99D1D5997E80D4960CC77B4C22 /* Pods-TimerThreadPodUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TimerThreadPodUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4F518D41B8C9FB7909714D483C41153A /* Pods-TimerThreadPod-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TimerThreadPod-frameworks.sh"; sourceTree = "<group>"; };
+		5E8331CF44136BC080D0D8FD4E595BD2 /* LJTimerThread-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LJTimerThread-umbrella.h"; sourceTree = "<group>"; };
+		65AF0F20A5B220A44CFA374014A4B60D /* Pods-TimerThreadPodTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TimerThreadPodTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6C3F582E2E467510A6422A1203B5CA55 /* LJTimerTaskSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LJTimerTaskSource.h; path = LJTimerThread/LJTimerTaskSource.h; sourceTree = "<group>"; };
+		6D453FD2654AA41063533347B1C3DCDD /* LJTimerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LJTimerProtocol.h; path = LJTimerThread/LJTimerProtocol.h; sourceTree = "<group>"; };
+		7D4F18AE6C22493D7649A3E38CC53948 /* Pods-TimerThreadPodTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TimerThreadPodTests-Info.plist"; sourceTree = "<group>"; };
+		807F3CC28E83295C73D0FC37E951A576 /* Pods-TimerThreadPodTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TimerThreadPodTests.modulemap"; sourceTree = "<group>"; };
+		84B703A464CB9BE5B75B386A4A80C6C9 /* Pods-TimerThreadPodUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TimerThreadPodUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8CDA1BEB4A3CF1B9CA534DE613E339F4 /* Pods_TimerThreadPodUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TimerThreadPodUITests.framework; path = "Pods-TimerThreadPodUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EB7B7A5A10B2FA2DEB1F7607B307215 /* Pods-TimerThreadPodUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TimerThreadPodUITests-dummy.m"; sourceTree = "<group>"; };
+		93E75FD352DF7890B60310175899C490 /* Pods-TimerThreadPodUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TimerThreadPodUITests-umbrella.h"; sourceTree = "<group>"; };
+		9C2F5575304EB489FD56AE10F15D30F2 /* LJTimerThread.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LJTimerThread.modulemap; sourceTree = "<group>"; };
+		9D5D4601E999AF16630F43278DE0E410 /* Pods-TimerThreadPodTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TimerThreadPodTests-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ADCD32C35DD6BCCA3B5AC7585B4EF2C8 /* LJTimerEnum.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LJTimerEnum.h; path = LJTimerThread/LJTimerEnum.h; sourceTree = "<group>"; };
+		B234BE0038AB0F2349C5D694C8B1EAA5 /* Pods-TimerThreadPod.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TimerThreadPod.modulemap"; sourceTree = "<group>"; };
+		B3A5EFF5135217A6725B115E1D7E76B0 /* Pods-TimerThreadPod-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TimerThreadPod-acknowledgements.plist"; sourceTree = "<group>"; };
+		C01B333ED8AF74D95F2BA5091E7589BF /* LJTimerThread-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LJTimerThread-prefix.pch"; sourceTree = "<group>"; };
+		C9A645BF6845F57F2F67AE2CF74AB4D9 /* Pods_TimerThreadPodTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TimerThreadPodTests.framework; path = "Pods-TimerThreadPodTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5DC20781ACABD9CAD177FC9BCB2E7E3 /* LJTimerTaskSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LJTimerTaskSource.m; path = LJTimerThread/LJTimerTaskSource.m; sourceTree = "<group>"; };
+		D8ABF74FC9AE55DE9F688C9E6C88B688 /* Pods-TimerThreadPodUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TimerThreadPodUITests.modulemap"; sourceTree = "<group>"; };
+		E8418E1A7567503D3200422A456054C5 /* Pods-TimerThreadPodUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TimerThreadPodUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F13B36EC4DCF58F2110C89631EF27B89 /* LJTimerThread.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LJTimerThread.xcconfig; sourceTree = "<group>"; };
+		F657080A9995F065861A2A1B664C32E5 /* Pods-TimerThreadPod-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TimerThreadPod-Info.plist"; sourceTree = "<group>"; };
+		F870B282F291D4C4BD4197C0E71CB4BD /* LJTimerThread-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LJTimerThread-Info.plist"; sourceTree = "<group>"; };
+		FA97E9900004DD07957E84F9D81ED806 /* Pods-TimerThreadPod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TimerThreadPod.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0ADD649FED7C9565403CF3B8BC7D4B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DE3BF09ECB153D26E1A445495A0A23E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D58E704D9F23A0A4763F33D3D8677C88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043110EAC733D8E37EA5211E53B50F2F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD252D4BF6E26A740568950DBA3E2508 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65EA7980FABA1BC27F63959FEAF665C5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1A470C38D394E56637D776CFA46703B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				375E32DA886B2D5C81232B4C0870BD89 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A9CF03CEA0ECD3CA4EC0B18B945A658 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5FDF659FAFB99263E40D287CE79084DB /* LJTimerThread */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5FDF659FAFB99263E40D287CE79084DB /* LJTimerThread */ = {
+			isa = PBXGroup;
+			children = (
+				125E9141D3A363F2105783CD092992BA /* LJTaskSourceInfo.h */,
+				1FAAA59FBC9E9ACD3B4347AF79481AD1 /* LJTaskSourceInfo.m */,
+				ADCD32C35DD6BCCA3B5AC7585B4EF2C8 /* LJTimerEnum.h */,
+				6D453FD2654AA41063533347B1C3DCDD /* LJTimerProtocol.h */,
+				6C3F582E2E467510A6422A1203B5CA55 /* LJTimerTaskSource.h */,
+				D5DC20781ACABD9CAD177FC9BCB2E7E3 /* LJTimerTaskSource.m */,
+				02793A149B31F134C5834EA2ECF08A64 /* LJTimerThread.h */,
+				380B0678A30521162744C415CF1D0609 /* LJTimerThread.m */,
+				A32100EE1C8E97E225B2C5C92BF656EB /* Support Files */,
+			);
+			name = LJTimerThread;
+			path = LJTimerThread;
+			sourceTree = "<group>";
+		};
+		75D90E2C1CFF28B38797CE7440E986B4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				83894E88FC5C4B7D56BEE1D39463EEAA /* Pods-TimerThreadPod */,
+				8E0CAB4D50749EF3923664FDDF66BE12 /* Pods-TimerThreadPodTests */,
+				A9F0EAEB3433C30147E9F62D05B88BF0 /* Pods-TimerThreadPodUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		83894E88FC5C4B7D56BEE1D39463EEAA /* Pods-TimerThreadPod */ = {
+			isa = PBXGroup;
+			children = (
+				B234BE0038AB0F2349C5D694C8B1EAA5 /* Pods-TimerThreadPod.modulemap */,
+				1D4F2FDDA2880F9E067064B676D7E181 /* Pods-TimerThreadPod-acknowledgements.markdown */,
+				B3A5EFF5135217A6725B115E1D7E76B0 /* Pods-TimerThreadPod-acknowledgements.plist */,
+				40231669E53C3201CCDBE1A89E42E7B8 /* Pods-TimerThreadPod-dummy.m */,
+				4F518D41B8C9FB7909714D483C41153A /* Pods-TimerThreadPod-frameworks.sh */,
+				F657080A9995F065861A2A1B664C32E5 /* Pods-TimerThreadPod-Info.plist */,
+				0A66C20BE968F6A59383254D536C10FF /* Pods-TimerThreadPod-umbrella.h */,
+				282646CFCDDC5783D372F85B43B69A5A /* Pods-TimerThreadPod.debug.xcconfig */,
+				FA97E9900004DD07957E84F9D81ED806 /* Pods-TimerThreadPod.release.xcconfig */,
+			);
+			name = "Pods-TimerThreadPod";
+			path = "Target Support Files/Pods-TimerThreadPod";
+			sourceTree = "<group>";
+		};
+		8E0CAB4D50749EF3923664FDDF66BE12 /* Pods-TimerThreadPodTests */ = {
+			isa = PBXGroup;
+			children = (
+				807F3CC28E83295C73D0FC37E951A576 /* Pods-TimerThreadPodTests.modulemap */,
+				17569AE44EE752603BB9D7557C95A6B1 /* Pods-TimerThreadPodTests-acknowledgements.markdown */,
+				65AF0F20A5B220A44CFA374014A4B60D /* Pods-TimerThreadPodTests-acknowledgements.plist */,
+				3427FE1BF4E63DD77503D580055A5491 /* Pods-TimerThreadPodTests-dummy.m */,
+				7D4F18AE6C22493D7649A3E38CC53948 /* Pods-TimerThreadPodTests-Info.plist */,
+				9D5D4601E999AF16630F43278DE0E410 /* Pods-TimerThreadPodTests-umbrella.h */,
+				13D8F28EE5794427054AA43049E0CAE1 /* Pods-TimerThreadPodTests.debug.xcconfig */,
+				1CBE5EB0232E23B605407DB03770E51B /* Pods-TimerThreadPodTests.release.xcconfig */,
+			);
+			name = "Pods-TimerThreadPodTests";
+			path = "Target Support Files/Pods-TimerThreadPodTests";
+			sourceTree = "<group>";
+		};
+		A32100EE1C8E97E225B2C5C92BF656EB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C2F5575304EB489FD56AE10F15D30F2 /* LJTimerThread.modulemap */,
+				F13B36EC4DCF58F2110C89631EF27B89 /* LJTimerThread.xcconfig */,
+				418F78CE491B8B9D0687272C38C89599 /* LJTimerThread-dummy.m */,
+				F870B282F291D4C4BD4197C0E71CB4BD /* LJTimerThread-Info.plist */,
+				C01B333ED8AF74D95F2BA5091E7589BF /* LJTimerThread-prefix.pch */,
+				5E8331CF44136BC080D0D8FD4E595BD2 /* LJTimerThread-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LJTimerThread";
+			sourceTree = "<group>";
+		};
+		A9F0EAEB3433C30147E9F62D05B88BF0 /* Pods-TimerThreadPodUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D8ABF74FC9AE55DE9F688C9E6C88B688 /* Pods-TimerThreadPodUITests.modulemap */,
+				E8418E1A7567503D3200422A456054C5 /* Pods-TimerThreadPodUITests-acknowledgements.markdown */,
+				4F0ACD99D1D5997E80D4960CC77B4C22 /* Pods-TimerThreadPodUITests-acknowledgements.plist */,
+				8EB7B7A5A10B2FA2DEB1F7607B307215 /* Pods-TimerThreadPodUITests-dummy.m */,
+				49FFC9DBE5E224F1756FC77660F96044 /* Pods-TimerThreadPodUITests-Info.plist */,
+				93E75FD352DF7890B60310175899C490 /* Pods-TimerThreadPodUITests-umbrella.h */,
+				84B703A464CB9BE5B75B386A4A80C6C9 /* Pods-TimerThreadPodUITests.debug.xcconfig */,
+				2AE9B14086A3DFAC95C4E5D44E73448B /* Pods-TimerThreadPodUITests.release.xcconfig */,
+			);
+			name = "Pods-TimerThreadPodUITests";
+			path = "Target Support Files/Pods-TimerThreadPodUITests";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				0A9CF03CEA0ECD3CA4EC0B18B945A658 /* Pods */,
+				EFEBDAA27B48D5A880D88517311407D2 /* Products */,
+				75D90E2C1CFF28B38797CE7440E986B4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFEBDAA27B48D5A880D88517311407D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A22F3AE09691C13CEA190E7899B4BB7 /* LJTimerThread.framework */,
+				0BE5BB973F5E06F2BD1897DC747BB8A9 /* Pods_TimerThreadPod.framework */,
+				C9A645BF6845F57F2F67AE2CF74AB4D9 /* Pods_TimerThreadPodTests.framework */,
+				8CDA1BEB4A3CF1B9CA534DE613E339F4 /* Pods_TimerThreadPodUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1B60691E18323F0FDA1DB4202E2050E3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AEBD2219CE9765B0ED67CD9880D4FE6 /* Pods-TimerThreadPodUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36A5E06FB800CE95EE6B8599AC9E8FA0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C840216B467078E9FC337B59855E22CB /* LJTaskSourceInfo.h in Headers */,
+				94C96CEEC349E914A6067DE8F043E65B /* LJTimerEnum.h in Headers */,
+				1DA1A4FC0234B87E2ECC52C099C9880C /* LJTimerProtocol.h in Headers */,
+				C5B48F28FAB287AC21141ABDDC3137E0 /* LJTimerTaskSource.h in Headers */,
+				F1BE036698CD7A5E9D834EDDFD58EF82 /* LJTimerThread-umbrella.h in Headers */,
+				3037C0A83672A2DDB80F815D364F9CE9 /* LJTimerThread.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B875F4FAE1AB61BA6C740632AB7592B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18AB635ABBBC94CC3208E03ECBEE1500 /* Pods-TimerThreadPodTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E59F318E63E17CEB2546B9B229A32A63 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEAC7FE72E7A5D3FCA05B722BDB6ECE0 /* Pods-TimerThreadPod-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		11E9E3B218CA17B7148EB79F058C61BA /* LJTimerThread */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EAA387889E4EDABF9448282FEE59C91 /* Build configuration list for PBXNativeTarget "LJTimerThread" */;
+			buildPhases = (
+				36A5E06FB800CE95EE6B8599AC9E8FA0 /* Headers */,
+				DB96994B1C85EE1AB0353248186A68D5 /* Sources */,
+				D58E704D9F23A0A4763F33D3D8677C88 /* Frameworks */,
+				3B61AC87013C242BDF114E8A01990B3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LJTimerThread;
+			productName = LJTimerThread;
+			productReference = 1A22F3AE09691C13CEA190E7899B4BB7 /* LJTimerThread.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C028BC5E9C40F3F7641E7F9EC9F01209 /* Pods-TimerThreadPodTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0CBF2BEAA11A65D434CCA13979CC801 /* Build configuration list for PBXNativeTarget "Pods-TimerThreadPodTests" */;
+			buildPhases = (
+				3B875F4FAE1AB61BA6C740632AB7592B /* Headers */,
+				1ED2DBD558D1FEFDCAE6E02834373A4C /* Sources */,
+				DD252D4BF6E26A740568950DBA3E2508 /* Frameworks */,
+				5DDDD1F4408A4071CC1618148431D430 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8864069BFD42AFB087CEFA5FFD46131E /* PBXTargetDependency */,
+			);
+			name = "Pods-TimerThreadPodTests";
+			productName = "Pods-TimerThreadPodTests";
+			productReference = C9A645BF6845F57F2F67AE2CF74AB4D9 /* Pods_TimerThreadPodTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CC61DB264111EDD2D2451099EE5DA7DF /* Pods-TimerThreadPodUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 459DADEBB73DED4E264E2C378DCDABF2 /* Build configuration list for PBXNativeTarget "Pods-TimerThreadPodUITests" */;
+			buildPhases = (
+				1B60691E18323F0FDA1DB4202E2050E3 /* Headers */,
+				A8BF576934F88C959E8EA272F2EC3F6E /* Sources */,
+				A0ADD649FED7C9565403CF3B8BC7D4B7 /* Frameworks */,
+				90711FE9A8122847C1849D94504583B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0A5CE916F1EB2F325A1F9EF5B3E065F /* PBXTargetDependency */,
+			);
+			name = "Pods-TimerThreadPodUITests";
+			productName = "Pods-TimerThreadPodUITests";
+			productReference = 8CDA1BEB4A3CF1B9CA534DE613E339F4 /* Pods_TimerThreadPodUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DC88D0DE8F8348038B603BC51B4B851D /* Pods-TimerThreadPod */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4EBD56F1EF3E1024EAF20220E8D3C32 /* Build configuration list for PBXNativeTarget "Pods-TimerThreadPod" */;
+			buildPhases = (
+				E59F318E63E17CEB2546B9B229A32A63 /* Headers */,
+				CBE3336FE1086EC6DD552B439539CFDE /* Sources */,
+				E1A470C38D394E56637D776CFA46703B /* Frameworks */,
+				F611692FE75F597B08BACD035EF9903D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57017F1851409F036603FDEB035E4344 /* PBXTargetDependency */,
+			);
+			name = "Pods-TimerThreadPod";
+			productName = "Pods-TimerThreadPod";
+			productReference = 0BE5BB973F5E06F2BD1897DC747BB8A9 /* Pods_TimerThreadPod.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = EFEBDAA27B48D5A880D88517311407D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11E9E3B218CA17B7148EB79F058C61BA /* LJTimerThread */,
+				DC88D0DE8F8348038B603BC51B4B851D /* Pods-TimerThreadPod */,
+				C028BC5E9C40F3F7641E7F9EC9F01209 /* Pods-TimerThreadPodTests */,
+				CC61DB264111EDD2D2451099EE5DA7DF /* Pods-TimerThreadPodUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B61AC87013C242BDF114E8A01990B3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DDDD1F4408A4071CC1618148431D430 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90711FE9A8122847C1849D94504583B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F611692FE75F597B08BACD035EF9903D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1ED2DBD558D1FEFDCAE6E02834373A4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0E7BBD8980283F76B03D265DAB7A64 /* Pods-TimerThreadPodTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8BF576934F88C959E8EA272F2EC3F6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1BB0A571ED01573D39FE6ED4EA94B55 /* Pods-TimerThreadPodUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBE3336FE1086EC6DD552B439539CFDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2289DB68F71B2ADC2154D724E12F4CF0 /* Pods-TimerThreadPod-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB96994B1C85EE1AB0353248186A68D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97979F7B470D506602D040C5A8B1B278 /* LJTaskSourceInfo.m in Sources */,
+				BF708C75797CC00159E55C013B873F77 /* LJTimerTaskSource.m in Sources */,
+				28799128580118B93561B5343BF79F4A /* LJTimerThread-dummy.m in Sources */,
+				4777E43E5855CA816287D31436EA57DB /* LJTimerThread.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		57017F1851409F036603FDEB035E4344 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LJTimerThread;
+			target = 11E9E3B218CA17B7148EB79F058C61BA /* LJTimerThread */;
+			targetProxy = EB5A6544C547CD757A3D55782F8B3936 /* PBXContainerItemProxy */;
+		};
+		8864069BFD42AFB087CEFA5FFD46131E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TimerThreadPod";
+			target = DC88D0DE8F8348038B603BC51B4B851D /* Pods-TimerThreadPod */;
+			targetProxy = B4E935B0B82A6475A9A81CEBCB9461E1 /* PBXContainerItemProxy */;
+		};
+		F0A5CE916F1EB2F325A1F9EF5B3E065F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TimerThreadPod";
+			target = DC88D0DE8F8348038B603BC51B4B851D /* Pods-TimerThreadPod */;
+			targetProxy = 3564DC7282FB045FEC6B9483CDB274F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		11182AC8A546CA69AE553220983A1FEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 282646CFCDDC5783D372F85B43B69A5A /* Pods-TimerThreadPod.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TimerThreadPod/Pods-TimerThreadPod-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TimerThreadPod/Pods-TimerThreadPod.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4F7B115269CEF9795D600A84342795F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F13B36EC4DCF58F2110C89631EF27B89 /* LJTimerThread.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LJTimerThread/LJTimerThread-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LJTimerThread/LJTimerThread-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/LJTimerThread/LJTimerThread.modulemap";
+				PRODUCT_MODULE_NAME = LJTimerThread;
+				PRODUCT_NAME = LJTimerThread;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5D603A55DCF01A7520F963A93A4758F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AE9B14086A3DFAC95C4E5D44E73448B /* Pods-TimerThreadPodUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TimerThreadPodUITests/Pods-TimerThreadPodUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TimerThreadPodUITests/Pods-TimerThreadPodUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6410F571BA8C1AEC6A19403F1B61B0B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9B46847A11944A9BC4C2CC100BC272C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA97E9900004DD07957E84F9D81ED806 /* Pods-TimerThreadPod.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TimerThreadPod/Pods-TimerThreadPod-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TimerThreadPod/Pods-TimerThreadPod.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A27713CB74E99AF202AADC23200A32F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D7821CE4C5E79F8E45EE7E2B339FC017 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CBE5EB0232E23B605407DB03770E51B /* Pods-TimerThreadPodTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TimerThreadPodTests/Pods-TimerThreadPodTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TimerThreadPodTests/Pods-TimerThreadPodTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E3BDB3569CE82506E9581374339FED7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F13B36EC4DCF58F2110C89631EF27B89 /* LJTimerThread.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LJTimerThread/LJTimerThread-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LJTimerThread/LJTimerThread-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/LJTimerThread/LJTimerThread.modulemap";
+				PRODUCT_MODULE_NAME = LJTimerThread;
+				PRODUCT_NAME = LJTimerThread;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F90C1F005B77B189873C3D63BA9CED65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84B703A464CB9BE5B75B386A4A80C6C9 /* Pods-TimerThreadPodUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TimerThreadPodUITests/Pods-TimerThreadPodUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TimerThreadPodUITests/Pods-TimerThreadPodUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FB96D01339FEE32BE7309F097CAE8435 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13D8F28EE5794427054AA43049E0CAE1 /* Pods-TimerThreadPodTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TimerThreadPodTests/Pods-TimerThreadPodTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TimerThreadPodTests/Pods-TimerThreadPodTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		459DADEBB73DED4E264E2C378DCDABF2 /* Build configuration list for PBXNativeTarget "Pods-TimerThreadPodUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F90C1F005B77B189873C3D63BA9CED65 /* Debug */,
+				5D603A55DCF01A7520F963A93A4758F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6410F571BA8C1AEC6A19403F1B61B0B5 /* Debug */,
+				A27713CB74E99AF202AADC23200A32F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EAA387889E4EDABF9448282FEE59C91 /* Build configuration list for PBXNativeTarget "LJTimerThread" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F7B115269CEF9795D600A84342795F8 /* Debug */,
+				E3BDB3569CE82506E9581374339FED7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4EBD56F1EF3E1024EAF20220E8D3C32 /* Build configuration list for PBXNativeTarget "Pods-TimerThreadPod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11182AC8A546CA69AE553220983A1FEA /* Debug */,
+				9B46847A11944A9BC4C2CC100BC272C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0CBF2BEAA11A65D434CCA13979CC801 /* Build configuration list for PBXNativeTarget "Pods-TimerThreadPodTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB96D01339FEE32BE7309F097CAE8435 /* Debug */,
+				D7821CE4C5E79F8E45EE7E2B339FC017 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
