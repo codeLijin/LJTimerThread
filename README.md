@@ -153,8 +153,8 @@ thread manager of timer
 #### 二. LJTimerTaskSource
 ###### 1: 初始化
 
-    原理与初始化一致, delegate与task只能传一个, 函数内部会保存调用方式, 如果都传的话...你可以试试🙃
-    stat: 任务添加时的状态, 如果你着急运行, 可以先设置为LJTHREADTIMERSTAT_SUSPEND挂起, 请不要触碰LJTHREADTIMERSTAT_CANCEL这个属性
+    原理与初始化一致, delegate与task只能传一个, 函数内部会保存调用方式, 如果都传的话 你可以试试🙃
+    stat: 任务添加时的状态, 如果你暂时不想运行该定时器, 可以先设置为LJTHREADTIMERSTAT_SUSPEND挂起, 请不要触碰LJTHREADTIMERSTAT_CANCEL这个属性
 ```cpp
 - (instancetype)initWithDelegate:(nullable id<LJThreadDelegate>)delegate
                             task:(nullable lj_timerThreadTask)task
