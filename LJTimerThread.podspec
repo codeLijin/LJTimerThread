@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => 'https://github.com/codeLijin/LJTimerThread.git', :tag => s.version }
   s.requires_arc = true
   s.source_files = 'LJTimerThread'
-  s.license      = "LICENSE"
+  s.license      = "MIT"
 
   s.description  = 'LJTimerThread is a simple manager for timer task on iOS.' \
                    'Author lijin.'
