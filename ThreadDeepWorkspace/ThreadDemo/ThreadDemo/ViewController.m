@@ -67,6 +67,7 @@
 
 // 操作单个TimerSource
 - (IBAction)operationSingleSegmentAction:(UISegmentedControl *)sender {
+    [sender setSelectedSegmentIndex:sender.numberOfSegments - 1];
     if (!self.sourceIDTextField.text.length && sender.selectedSegmentIndex != 3) return;
     unsigned long long source_id = self.sourceIDTextField.text.longLongValue;
     switch (sender.selectedSegmentIndex) {
@@ -93,7 +94,6 @@
         default:
             break;
     }
-    [sender setSelectedSegmentIndex:sender.numberOfSegments - 1];
 }
 
 

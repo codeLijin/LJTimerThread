@@ -107,6 +107,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - getter
 - (NSRunLoopMode)runloopMode_t;
+
+#pragma mark - unavailable
+-(instancetype)init __attribute__((unavailable("use structure method")));
++ (instancetype)new __attribute__((unavailable("use structure method")));
 @end
 
 NS_ASSUME_NONNULL_END
